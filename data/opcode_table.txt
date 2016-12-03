@@ -1,0 +1,246 @@
+CE    2    ACI     DATA
+8F    1    ADC     A
+88    1    ADC     B
+89    1    ADC     C
+8A    1    ADC     D
+8B    1    ADC     E
+8C    1    ADC     H
+8D    1    ADC     L
+8E    1    ADC     M
+87    1    ADD     A
+80    1    ADD     B
+81    1    ADD     C
+82    1    ADD     D
+83    1    ADD     E
+84    1    ADD     H
+85    1    ADD     L
+86    1    ADD     M
+C6    2    ADI     DATA
+A7    1    ANA     A
+A0    1    ANA     B
+A1    1    ANA     C
+A2    1    ANA     D
+A3    1    ANA     E
+A4    1    ANA     H
+A5    1    ANA     L
+A6    1    ANA     M
+E6    2    ANI     DATA
+CD    3    CALL    LABEL
+DC    3    CC      LABEL
+FC    3    CM      LABEL
+2F    1    CMA
+3F    1    CMC
+BF    1    CMP     A
+B8    1    CMP     B
+B9    1    CMP     C
+BA    1    CMP     D
+BB    1    CMP     E
+BC    1    CMP     H
+BD    1    CMP     L
+BD    1    CMP     M
+D4    3    CNC     LABEL
+C4    3    CNZ     LABEL
+F4    3    CP      LABEL
+EC    3    CPE     LABEL
+FE    2    CPI     DATA
+E4    3    CPO     LABEL
+CC    3    CZ      LABEL
+27    1    DAA
+09    1    DAD     B
+19    1    DAD     D
+29    1    DAD     H
+39    1    DAD     SP
+3D    1    DCR     A
+05    1    DCR     B
+0D    1    DCR     C
+15    1    DCR     D
+1D    1    DCR     E
+25    1    DCR     H
+2D    1    DCR     L
+35    1    DCR     M
+0B    1    DCX     B
+1B    1    DCX     D
+2B    1    DCX     H
+3B    1    DCX     SP
+F3    1    DI
+FB    1    EI
+76    1    HLT
+DB    2    IN      PORT
+3C    1    INR     A
+04    1    INR     B
+0C    1    INR     C
+14    1    INR     D
+1C    1    INR     E
+24    1    INR     H
+2C    1    INR     L
+34    1    INR     M
+03    1    INX     B
+13    1    INX     D
+23    1    INX     H
+33    1    INX     SP
+DA    3    JC      LABEL
+FA    3    JM      LABEL
+C3    3    JMP     LABEL
+D2    3    JNC     LABEL
+C2    3    JNZ     LABEL
+F2    3    JP      LABEL
+EA    3    JPE     LABEL
+E2    3    JPO     LABEL
+CA    3    JZ      LABEL
+3A    3    LDA     ADDRESS
+0A    1    LDAX    B
+1A    1    LDAX    D
+2A    3    LHLD    ADDRESS
+01    3    LXI     B  ADDRESS
+11    3    LXI     D  ADDRESS
+21    3    LXI     H  ADDRESS
+31    3    LXI     SP ADDRESSs
+7F    1    MOV     A  A
+78    1    MOV     A  B
+79    1    MOV     A  C
+7A    1    MOV     A  D
+7B    1    MOV     A  E
+7C    1    MOV     A  H
+7D    1    MOV     A  L
+7E    1    MOV     A  M
+47    1    MOV     B  A
+40    1    MOV     B  B
+41    1    MOV     B  C
+42    1    MOV     B  D
+43    1    MOV     B  E
+44    1    MOV     B  H
+45    1    MOV     B  L
+46    1    MOV     B  M
+4F    1    MOV     C  A
+48    1    MOV     C  B
+49    1    MOV     C  C
+4A    1    MOV     C  D
+4B    1    MOV     C  E
+4C    1    MOV     C  H
+4D    1    MOV     C  L
+4E    1    MOV     C  M
+57    1    MOV     D  A
+50    1    MOV     D  B
+51    1    MOV     D  C
+52    1    MOV     D  D
+53    1    MOV     D  E
+54    1    MOV     D  H
+55    1    MOV     D  L
+56    1    MOV     D  M
+5F    1    MOV     E  A
+58    1    MOV     E  B
+59    1    MOV     E  C
+5A    1    MOV     E  D
+5B    1    MOV     E  E
+5C    1    MOV     E  H
+5D    1    MOV     E  L
+5E    1    MOV     E  M
+67    1    MOV     H  A
+60    1    MOV     H  B
+61    1    MOV     H  C
+62    1    MOV     H  D
+63    1    MOV     H  E
+64    1    MOV     H  H
+65    1    MOV     H  L
+66    1    MOV     H  M
+6F    1    MOV     L  A
+68    1    MOV     L  B
+69    1    MOV     L  C
+6A    1    MOV     L  D
+6B    1    MOV     L  E
+6C    1    MOV     L  H
+6D    1    MOV     L  L
+6E    1    MOV     L  M
+77    1    MOV     M  A
+70    1    MOV     M  B
+71    1    MOV     M  C
+72    1    MOV     M  D
+73    1    MOV     M  E
+74    1    MOV     M  H
+75    1    MOV     M  L
+3E    2    MVI     A  DATA
+06    2    MVI     B  DATA
+0E    2    MVI     C  DATA
+16    2    MVI     D  DATA
+1E    2    MVI     E  DATA
+26    2    MVI     H  DATA
+2E    2    MVI     L  DATA
+36    2    MVI     M  DATA
+00    1    NOP
+B7    1    ORA     A
+B0    1    ORA     B
+B1    1    ORA     C
+B2    1    ORA     D
+B3    1    ORA     E
+B4    1    ORA     H
+B5    1    ORA     L
+B6    1    ORA     M
+F6    2    ORI     DATA
+D3    2    OUT     PORT
+E9    1    PCHL
+C1    1    POP     B
+D1    1    POP     D
+E1    1    POP     H
+F1    1    POP     PSW
+C5    1    PUSH    B
+D5    1    PUSH    D
+E5    1    PUSH    H
+F5    1    PUSH    PSW
+17    1    RAL
+1F    1    RAR
+D8    1    RC
+C9    1    RET
+20    1    RIM
+07    1    RLC
+F8    1    RM
+D0    1    RNC
+C0    1    RNZ
+F0    1    RP
+E8    1    RPE
+E0    1    RPO
+0F    1    RRC
+C7    1    RST     0
+CF    1    RST     1
+D7    1    RST     2
+DF    1    RST     3
+E7    1    RST     4
+EF    1    RST     5
+F7    1    RST     6
+FF    1    RST     7
+C8    1    RZ
+9F    1    SBB     A
+98    1    SBB     B
+99    1    SBB     C
+9A    1    SBB     D
+9B    1    SBB     E
+9C    1    SBB     H
+9D    1    SBB     L
+9E    1    SBB     M
+DE    2    SBI     DATA
+22    3    SHLD    ADDRESS
+30    1    SIM
+F9    1    SPHL
+32    3    STA     ADDRESS
+02    1    STAX    B
+12    1    STAX    D
+37    1    STC
+97    1    SUB     A
+90    1    SUB     B
+91    1    SUB     C
+92    1    SUB     D
+93    1    SUB     E
+94    1    SUB     H
+95    1    SUB     L
+96    1    SUB     M
+D6    2    SUI     DATA
+EB    1    XCHG
+AF    1    XRA     A
+A8    1    XRA     B
+A9    1    XRA     C
+AA    1    XRA     D
+AB    1    XRA     E
+AC    1    XRA     H
+AD    1    XRA     L
+AE    1    XRA     M
+EE    2    XRI     DATA
+E3    1    XTHL

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<language id="8085_asm" _name="8085 Assembly" version="2.0" _section="Sources">
+    <styles>
+        <style id="comment" _name="Comment" map-to="def:comment"/>
+        <style id="arithmetic" _name="Arithmetic" map-to="def:arithmetic"/>
+        <style id="logical" _name="Logical" map-to="def:logical"/>
+        <style id="movement" _name="Movement" map-to="def:movement"/>
+        <style id="control" _name="Control" map-to="def:control"/>
+        <style id="io" _name="IO" map-to="def:io"/>
+        <style id="register" _name="Register" map-to="def:register"/>
+        <style id="invr" _name="InvalidRegister" map-to="def:invr"/>
+        <style id="accumulator" _name="Accumulator" map-to="def:acc"/>
+        <style id="memory" _name="Memory" map-to="def:mem"/>
+        <style id="decimal" _name="Decimal" map-to="def:decimal"/>
+        <style id="hex" _name="Hex" map-to="def:hex"/>
+        <style id="label" _name="Label" map-to="def:preprocessor"/>
+    </styles>
+    <default-regex-options case-sensitive="false"/>
+    <definitions>
+        <context id="8085_asm">
+            <include>
+                <context id="label" style-ref="label">
+                    <match>\s*[_0-9a-zA-Z]+:</match>
+                </context>
+                <context id="comment" style-ref="comment">
+                    <start>;</start>
+                    <end>$</end>
+                </context>
+                <context id="arithmetic" style-ref="arithmetic">
+                    <keyword>aci</keyword>
+                    <keyword>ad(c|d|i)</keyword>
+                    <keyword>da(a|d)</keyword>
+                    <keyword>dc(r|x)</keyword>
+                    <keyword>i(nr|nx)</keyword>
+                    <keyword>sb(b|i)</keyword>
+                    <keyword>su(b|i)</keyword>
+                </context>
+                <context id="logical" style-ref="logical">
+                    <keyword>an(a|i)</keyword>
+                    <keyword>cm(a|c|p)</keyword>
+                    <keyword>cpi</keyword>
+                    <keyword>o(ra|ri)</keyword>
+                    <keyword>ra(l|r)</keyword>
+                    <keyword>rlc</keyword>
+                    <keyword>rrc</keyword>
+                    <keyword>stc</keyword>
+                    <keyword>xr(a|i)</keyword>
+                </context>
+                <context id="movement" style-ref="movement">
+                    <keyword>ld(a|ax)</keyword>
+                    <keyword>(l|s)hld</keyword>
+                    <keyword>lxi</keyword>
+                    <keyword>m(ov|vi)</keyword>
+                    <keyword>push</keyword>
+                    <keyword>pop</keyword>
+                    <keyword>st(a|ax)</keyword>
+                    <keyword>xchg</keyword>
+                </context>
+                <context id="control" style-ref="control">
+                    <keyword>call</keyword>
+                    <keyword>c(c|m|p|z)</keyword>
+                    <keyword>cn(c|z)</keyword>
+                    <keyword>cp(e|o)</keyword>
+                    <keyword>hlt</keyword>
+                    <keyword>j(c|m|p|z|mp)</keyword>
+                    <keyword>jn(c|z)</keyword>
+                    <keyword>jp(e|o)</keyword>
+                    <keyword>nop</keyword>
+                    <keyword>(pc|xt)hl</keyword>
+                    <keyword>r(c|m|p|z)</keyword>
+                    <keyword>rn(c|z)</keyword>
+                    <keyword>rp(e|o)</keyword>
+                    <keyword>ret</keyword>
+                    <keyword>rst</keyword>
+                    <keyword>sphl</keyword>
+                </context>
+                <context id="io" style-ref="io">
+                    <keyword>(d|e)i</keyword>
+                    <keyword>in</keyword>
+                    <keyword>out</keyword>
+                    <keyword>(r|s)im</keyword>
+                </context>
+                <context id="registers" style-ref="register">
+                    <keyword>(b|c|d|e|h|l)</keyword>
+                </context>
+                <context id="invr" style-ref="invr">
+                    <keyword>(psw|sp|pc)</keyword>
+                </context>
+                <context id="accumulator" style-ref="accumulator">
+                    <keyword>a</keyword>
+                </context>
+                <context id="memory" style-ref="memory">
+                    <keyword>m</keyword>
+                </context>
+                <context id="decimal" style-ref="decimal">
+                    <match>\b([1-9][0-9]*|0)([Uu]([Ll]|LL|ll)?|([Ll]|LL|ll)[Uu]?)?\b</match>
+                </context>
+                <context id="hex" style-ref="hex">
+                    <match>\b[0-9a-fA-F]+([Uu]([Ll]|LL|ll)?|([Ll]|LL|ll)[Uu]?)?(h|H)?\b</match>
+                </context>
+            </include>
+        </context>
+    </definitions>
+</language>

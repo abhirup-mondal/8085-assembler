@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<style-scheme id="jucse_1" _name="jucse_1" version="1.0">
+
+
+<color name="u_base03"      value="#002b36"/>
+<color name="u_base02"      value="#073642"/>
+<color name="u_base01"      value="#586e75"/>
+<color name="u_base00"      value="#657b83"/>
+<color name="u_base0"       value="#839496"/>
+<color name="u_base1"       value="#93a1a1"/>
+<color name="u_base2"       value="#eee8d5"/>
+<color name="u_base3"       value="#fdf6e3"/>
+<color name="u_yellow"      value="#b58900"/>
+<color name="u_orange"      value="#cb4b16"/>
+<color name="u_red"         value="#dc322f"/>
+<color name="u_magenta"     value="#d33682"/>
+<color name="u_violet"      value="#6c71c4"/>
+<color name="u_blue"        value="#268bd2"/>
+<color name="u_cyan"        value="#2aa198"/>
+<color name="u_green"       value="#859900"/>
+<color name="u_light_blue"  value="#157ad8"/>
+
+
+
+  <!-- Tango Palette -->
+  <color name="green1"                      value="#339900"/>
+  <color name="red1"                        value="#dd3333"/>
+  <color name="red2"                        value="#ff3333"/>
+  <color name="blue1"                       value="#3333ff"/>
+  <color name="magenta1"                    value="#cc00cc"/>
+  <color name="white1"                      value="#fafafa"/>
+
+  <!-- Global Settings -->
+  <style name="text"                        foreground="#black" background="#white"/>
+  <style name="selection"                   foreground="#black" background="#bcd2f2"/>
+  <style name="cursor"                      foreground="#black"/>
+  <style name="current-line"                background="#fce1cc"/>
+  <style name="line-numbers"                foreground="#gray" background="#white"/>
+
+  <!-- Bracket Matching -->
+  <style name="bracket-match"               foreground="#black" background="#cyan"/>
+  <style name="bracket-mismatch"            foreground="#white" background="#red"/>
+
+  <!-- Comments -->
+  <style name="def:comment"                 foreground="#6a9b49"/>
+  <style name="def:sheband"                 foreground="green1" bold="false"/>
+  <style name="def:doc-comment-element"     italic="true"/>
+
+  <!-- Constants -->
+  <style name="def:constant"                foreground="red1"/>
+  <style name="def:string"                  foreground="red1"/>
+  <style name="def:special-char"            foreground="magenta1"/>
+  <style name="def:special-constant"        foreground="magenta1"/>
+  <style name="def:floating-point"          foreground="red1"/>
+
+  <!-- Identifiers -->
+  <style name="def:identifier"              foreground="#809010" bold="false"/>
+
+  <!-- Statements -->
+  <style name="def:statement"               foreground="blue1" bold="false"/>
+
+  <!-- Types -->
+  <style name="def:register"                foreground="#333333"   bold="true"/>
+  <style name="def:invr"                    foreground="#ffffff"  bold="true" background="#aa3333"/>
+  <style name="def:acc"                     foreground="#333333"   bold="true"/>
+  <style name="def:mem"                     foreground="#333333"   bold="true"/>
+
+  <!-- Others -->
+  <style name="def:arithmetic"              foreground="#93083b" bold="false"/>
+  <style name="def:logical"                 foreground="#93083b" bold="false"/>
+  <style name="def:movement"                foreground="#93083b" bold="false"/>
+  <style name="def:control"                 foreground="#93083b" bold="false"/>
+  <style name="def:io"                      foreground="#ffffff"    bold="true" background="#aa3333"/>
+
+  <style name="def:preprocessor"            foreground="#592e00" bold="false"/>
+
+  <style name="def:hex"                     foreground="#451c8c" bold="false"/>
+  <style name="def:decimal"                 foreground="#451c8c" bold="false"/>
+
+</style-scheme>
